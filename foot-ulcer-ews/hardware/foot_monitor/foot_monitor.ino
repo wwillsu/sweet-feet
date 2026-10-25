@@ -5,6 +5,10 @@
 #include <ArduinoLowPower.h>
 #include <FlashStorage.h>
 
+// ---------------- Which foot ----------------
+// Upload once with 'L' to the left board and once with 'R' to the right board.
+const char FOOT = 'L';
+
 // ---------------- Settings ----------------
 // TEST_MODE: short timings, no sleep, prints live activity to Serial Monitor.
 // Set to false for real use on battery.
@@ -16,15 +20,14 @@ const int           STILL_BLOCKS  = TEST_MODE ? 4               : 10;           
 const unsigned long MAX_SEARCH_MS = TEST_MODE ? 60UL * 1000     : 30UL * 60 * 1000; // give up waiting after this
 const unsigned long BLE_WINDOW_MS = TEST_MODE ? 15UL * 1000     : 20UL * 1000;      // how long to wait for the Mac
 const unsigned long SUB_WAIT_MS   = 5000;  // how long to wait for the Mac to subscribe
-const unsigned long LIVE_MS       = 1000;  // live demo: one reading per second while the Mac stays connected
-const unsigned long LIVE_MAX_MS   = TEST_MODE ? 60UL * 60 * 1000 : 10UL * 60 * 1000; // then go back to normal logging
 const unsigned long SAMPLE_MS     = 100;   // MPU read rate while searching (10 Hz)
 const float         ACT_THRESH    = 0.05;  // block std-dev below this counts as still (RE-TUNE in TEST_MODE)
 
-// Thermistors: top of each divider is powered from THERM_PWR only while reading
+// Thermistors: top of each divider is powered from THERM_PWR only while reading.
+// Four thermistors, T0..T3 on A0..A3.
 const int   THERM_PWR    = 2;            // D2
-const int   THERM_PINS[] = {A0, A1, A2};
-const int   NUM_THERMS   = 3;
+const int   THERM_PINS[] = {A0, A1, A2, A3};
+const int   NUM_THERMS   = 4;
 const float ADC_MAX   = 1023.0;
 const float R_FIXED   = 10000.0;
 const float R0        = 10000.0;
@@ -33,8 +36,8 @@ const float T0        = 298.15;
 
 // ---------------- Storage (kept in flash until sent) ----------------
 struct Reading {
-  uint32_t tMin;        // minutes since this boot
-  int16_t  temp[3];     // degrees C x100
+  uint32_t tSec;        // seconds since this boot
+  int16_t  temp[4];     // degrees C x100, T0..T3
   uint16_t act;         // activity x1000
   uint8_t  still;       // 1 = taken after real stillness, 0 = fallback
   uint8_t  boot;        // boot counter (low byte) so readings from different power-ons can be told apart
@@ -47,7 +50,7 @@ struct Log {
   uint16_t bootCount;
   Reading  r[MAX_READINGS];
 };
-const uint32_t LOG_MAGIC = 0xF007F008;
+const uint32_t LOG_MAGIC = 0xF007F00C;  // changed: 4 temps + seconds
 
 FlashStorage(logStore, Log);
 Log logBuf;
@@ -55,7 +58,7 @@ Log logBuf;
 // ---------------- BLE ----------------
 BLEService footService("19B10000-E8F2-537E-4F6C-D104768A1214");
 // Indications are acknowledged by the Mac, so we know each JSON line arrived
-BLEStringCharacteristic dataChar("19B10001-E8F2-537E-4F6C-D104768A1214", BLERead | BLEIndicate, 80);  // worst-case line is 71 bytes; MTU is 242
+BLEStringCharacteristic dataChar("19B10001-E8F2-537E-4F6C-D104768A1214", BLERead | BLEIndicate, 128);
 
 Adafruit_MPU6050 mpu;
 
@@ -78,12 +81,17 @@ uint64_t nowMs() {
   return (uint64_t)minutesUp * 60000ULL + msAccum;
 }
 
+uint32_t nowSec() {
+  tick();
+  return minutesUp * 60UL + msAccum / 1000UL;
+}
+
 void nap(unsigned long ms) {
   if (TEST_MODE) {
     delay(ms);
     tick();
   } else {
-    LowPower.sleep(ms);
+    LowPower.sleep((uint32_t)ms);
     tick(ms);
   }
 }
@@ -129,7 +137,7 @@ void readMotion(float &accMag, float &gyroMag) {
 // Ratiometric: uses the ADC ratio directly so battery voltage doesn't matter.
 float readThermistorC(int pin) {
   long sum = 0;
-  for (int i = 0; i < 16; i++) sum += analogRead(pin);  // average 16 samples to cut noise
+  for (int i = 0; i < 16; i++) sum += analogRead(pin);
   float adc = sum / 16.0;
   if (adc <= 0.5 || adc >= ADC_MAX - 0.5) return NAN;  // open or shorted thermistor
 
@@ -146,10 +154,10 @@ void readAllTemps(float temps[]) {
 }
 
 void fillReading(Reading &out, float temps[], float act, bool still) {
-  tick();
-  out.tMin = minutesUp;
+  out.tSec = nowSec();
   for (int i = 0; i < NUM_THERMS; i++) out.temp[i] = isnan(temps[i]) ? -32768 : (int16_t)(temps[i] * 100);
-  out.act = (uint16_t)min(act * 1000.0, 65535.0);
+  float scaled = act * 1000.0f;
+  out.act = (uint16_t)(scaled > 65535.0f ? 65535.0f : scaled);
   out.still = still ? 1 : 0;
   out.boot = (uint8_t)(logBuf.bootCount & 0xFF);
 }
@@ -164,7 +172,7 @@ void findStillReading(Reading &out) {
 
   uint64_t start = nowMs();
   float bestAct = 1e9;
-  float bestTemps[3] = {NAN, NAN, NAN};
+  float bestTemps[NUM_THERMS] = {NAN, NAN, NAN, NAN};
   int stillRun = 0;
 
   while (nowMs() - start < MAX_SEARCH_MS) {
@@ -182,10 +190,9 @@ void findStillReading(Reading &out) {
     float aMean = aSum / n, gMean = gSum / n;
     float aVar = aSq / n - aMean * aMean;
     float gVar = gSq / n - gMean * gMean;
-    float blockAct = sqrt(max(aVar, 0.0f)) + sqrt(max(gVar, 0.0f));
+    float blockAct = sqrtf(aVar > 0 ? aVar : 0) + sqrtf(gVar > 0 ? gVar : 0);
 
     if (TEST_MODE) {
-      // Serial Plotter format: two lines, activity vs threshold
       Serial.print("Activity:"); Serial.print(blockAct, 4);
       Serial.print(",Threshold:"); Serial.println(ACT_THRESH, 4);
     }
@@ -194,7 +201,7 @@ void findStillReading(Reading &out) {
     else stillRun = 0;
 
     if (stillRun >= STILL_BLOCKS) {
-      float temps[3];
+      float temps[NUM_THERMS];
       readAllTemps(temps);
       fillReading(out, temps, blockAct, true);
       mpu.enableSleep(true);
@@ -212,12 +219,13 @@ void findStillReading(Reading &out) {
   mpu.enableSleep(true);
 }
 
-// One reading as compact JSON (short keys to stay under the 80-byte characteristic):
-// {"b":3,"t":125,"T":[36.52,35.20,null],"a":0.012,"s":1}
+// One reading as compact JSON (short keys to stay under 128 bytes):
+// {"f":"L","b":3,"t":7500,"T":[31.52,30.20,null,29.90],"a":0.012,"s":1}
 String formatReading(const Reading &r) {
-  String s = "{\"b\":";
-  s += String(r.boot);
-  s += ",\"t\":"; s += String(r.tMin);
+  String s = "{\"f\":\"";
+  s += FOOT;
+  s += "\",\"b\":"; s += String(r.boot);
+  s += ",\"t\":"; s += String(r.tSec);
   s += ",\"T\":[";
   for (int i = 0; i < NUM_THERMS; i++) {
     if (i) s += ",";
@@ -225,6 +233,18 @@ String formatReading(const Reading &r) {
   }
   s += "],\"a\":"; s += String(r.act / 1000.0, 3);
   s += ",\"s\":"; s += String(r.still);
+  s += "}";
+  return s;
+}
+
+// Sent before the readings so the Mac can turn "seconds since boot" into real clock times:
+// {"f":"L","b":3,"now":7620,"n":4}
+String formatHeader() {
+  String s = "{\"f\":\"";
+  s += FOOT;
+  s += "\",\"b\":"; s += String(logBuf.bootCount & 0xFF);
+  s += ",\"now\":"; s += String(nowSec());
+  s += ",\"n\":"; s += String(logBuf.count);
   s += "}";
   return s;
 }
@@ -238,51 +258,25 @@ void storeReading(const Reading &r) {
   logBuf.r[logBuf.count++] = r;
 }
 
-// Live demo (pipeline/live.py): after the upload, keep sending fresh temperatures once a
-// second for as long as the Mac stays subscribed, e.g. {"live":[26.17,25.86,null]}.
-// No stillness check: the live demo compares every reading straight away.
-// foot_receiver.py on its own hangs up after the upload, so it never starts this.
-void streamLive(BLEDevice &central) {
-  if (TEST_MODE) Serial.println("Live streaming");
-  unsigned long start = millis();
-  while (central.connected() && dataChar.subscribed() && millis() - start < LIVE_MAX_MS) {
-    unsigned long t = millis();
-    float temps[NUM_THERMS];
-    readAllTemps(temps);
-    String s = "{\"live\":[";
-    for (int i = 0; i < NUM_THERMS; i++) {
-      if (i) s += ",";
-      s += isnan(temps[i]) ? String("null") : String(temps[i], 2);
-    }
-    s += "]}";
-    if (!dataChar.writeValue(s)) break;  // indication: waits for the Mac's confirm
-    while (central.connected() && millis() - t < LIVE_MS) BLE.poll();
-  }
-  if (central.connected()) central.disconnect();  // live time is up; the Mac reconnects next cycle
-  tick();
-}
-
-// Advertise for windowMs; if the Mac connects AND subscribes, send everything queued
-// as JSON lines, then {"done":N}, then live readings while it stays connected.
-// Returns true if every queued line was acknowledged.
-bool sendOverBLE(unsigned long windowMs) {
+// Advertise for a while; if the Mac connects AND subscribes, send a header,
+// everything queued as JSON lines, then {"done":N}. Returns true if every line was acknowledged.
+bool sendOverBLE() {
   if (!BLE.begin()) {
     Serial.println("BLE failed to start");
     return false;
   }
-  BLE.setLocalName("FootMonitor");
-  BLE.setDeviceName("FootMonitor");  // GAP name; otherwise macOS lists the board as "Arduino"
+  String name = String("FootMonitor-") + FOOT;
+  BLE.setLocalName(name.c_str());
+  BLE.setDeviceName(name.c_str());  // name macOS shows after connecting
   BLE.setAdvertisedService(footService);
-  // BLE.end() empties every service's characteristic list (GATT clearAttributes ->
-  // BLELocalService::clear), so the characteristic must be re-added every cycle.
-  // Skipping this left the Mac seeing the service with no characteristics.
+  // BLE.end() empties the service's characteristic list, so re-add it every cycle
   footService.addCharacteristic(dataChar);
   BLE.addService(footService);
   BLE.advertise();
 
   unsigned long start = millis();
   bool sent = false;
-  while (millis() - start < windowMs && !sent) {
+  while (millis() - start < BLE_WINDOW_MS && !sent) {
     BLEDevice central = BLE.central();
     if (central && central.connected()) {
       // wait for the Mac to subscribe; don't send into the void
@@ -295,7 +289,7 @@ bool sendOverBLE(unsigned long windowMs) {
         continue;
       }
 
-      bool ok = true;
+      bool ok = dataChar.writeValue(formatHeader());
       for (int i = 0; ok && i < logBuf.count; i++) {
         if (!central.connected() || !dataChar.subscribed()) { ok = false; break; }
         ok = dataChar.writeValue(formatReading(logBuf.r[i]));  // indication: waits for Mac's confirm
@@ -304,13 +298,11 @@ bool sendOverBLE(unsigned long windowMs) {
       if (ok && central.connected()) {
         ok = dataChar.writeValue(String("{\"done\":") + String(logBuf.count) + "}");
       }
-      // The Mac confirmed {"done"}, so everything arrived. Don't also require
-      // central.connected(): the Mac may hang up right after confirming, and
-      // treating that as a failure made the board resend the same readings.
+      // The Mac disconnects as soon as it gets "done", so don't require a live
+      // connection here; the indication above already waited for its confirm.
       if (ok) {
         logBuf.count = 0;
         sent = true;
-        streamLive(central);
       } else if (TEST_MODE) {
         Serial.println("Transfer interrupted; keeping data for next time");
       }
@@ -334,12 +326,8 @@ void loop() {
     Serial.println(formatReading(r));
   }
 
-  // TEST_MODE: stay connectable for the rest of the interval so the live demo connects quickly.
-  uint64_t used = nowMs() - cycleStart;
-  unsigned long window = BLE_WINDOW_MS;
-  if (TEST_MODE && used + BLE_WINDOW_MS < INTERVAL_MS) window = (unsigned long)(INTERVAL_MS - used);
-  sendOverBLE(window);
-  logStore.write(logBuf);  // whatever wasn't sent stays in flash (one write per cycle)
+  sendOverBLE();
+  logStore.write(logBuf);  // whatever wasn't sent stays in flash
 
   if (TEST_MODE) {
     Serial.print("Unsent readings in flash: ");
