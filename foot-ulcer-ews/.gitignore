@@ -1,0 +1,10 @@
+node_modules/
+dashboard/dist/
+.env.local
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+.convex/
+hardware/foot_data.json
+hardware/foot_data.json.tmp

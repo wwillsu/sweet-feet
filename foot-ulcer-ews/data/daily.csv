@@ -1,0 +1,211 @@
+patient_id,date,site,left_c,right_c,delta_c,tier,reason,rest_start,rest_end,message
+P0_control,2026-10-11,hallux,30.27,30.37,-0.1,normal,|dT| < 1.5 C,2026-10-11 00:40:00,2026-10-11 05:40:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-11,heel,30.74,30.65,0.09,normal,|dT| < 1.5 C,2026-10-11 00:40:00,2026-10-11 05:40:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-11,met1,31.22,31.16,0.06,normal,|dT| < 1.5 C,2026-10-11 00:40:00,2026-10-11 05:40:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-11,met3,31.29,31.41,-0.12,normal,|dT| < 1.5 C,2026-10-11 00:40:00,2026-10-11 05:40:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-11,met5,30.88,30.96,-0.08,normal,|dT| < 1.5 C,2026-10-11 00:40:00,2026-10-11 05:40:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-12,hallux,30.26,30.38,-0.12,normal,|dT| < 1.5 C,2026-10-12 00:55:00,2026-10-12 06:20:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-12,heel,30.75,30.66,0.09,normal,|dT| < 1.5 C,2026-10-12 00:55:00,2026-10-12 06:20:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-12,met1,31.23,31.16,0.07,normal,|dT| < 1.5 C,2026-10-12 00:55:00,2026-10-12 06:20:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-12,met3,31.29,31.42,-0.13,normal,|dT| < 1.5 C,2026-10-12 00:55:00,2026-10-12 06:20:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-12,met5,30.88,30.96,-0.08,normal,|dT| < 1.5 C,2026-10-12 00:55:00,2026-10-12 06:20:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-13,hallux,30.26,30.38,-0.12,normal,|dT| < 1.5 C,2026-10-12 23:40:00,2026-10-13 05:35:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-13,heel,30.76,30.66,0.1,normal,|dT| < 1.5 C,2026-10-12 23:40:00,2026-10-13 05:35:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-13,met1,31.23,31.15,0.09,normal,|dT| < 1.5 C,2026-10-12 23:40:00,2026-10-13 05:35:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-13,met3,31.29,31.43,-0.14,normal,|dT| < 1.5 C,2026-10-12 23:40:00,2026-10-13 05:35:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-13,met5,30.88,30.95,-0.07,normal,|dT| < 1.5 C,2026-10-12 23:40:00,2026-10-13 05:35:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-14,hallux,30.27,30.37,-0.1,normal,|dT| < 1.5 C,2026-10-14 00:35:00,2026-10-14 05:55:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-14,heel,30.75,30.67,0.08,normal,|dT| < 1.5 C,2026-10-14 00:35:00,2026-10-14 05:55:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-14,met1,31.24,31.15,0.09,normal,|dT| < 1.5 C,2026-10-14 00:35:00,2026-10-14 05:55:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-14,met3,31.28,31.42,-0.14,normal,|dT| < 1.5 C,2026-10-14 00:35:00,2026-10-14 05:55:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-14,met5,30.88,30.96,-0.08,normal,|dT| < 1.5 C,2026-10-14 00:35:00,2026-10-14 05:55:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-15,hallux,30.25,30.36,-0.11,normal,|dT| < 1.5 C,2026-10-15 00:35:00,2026-10-15 05:45:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-15,heel,30.76,30.67,0.09,normal,|dT| < 1.5 C,2026-10-15 00:35:00,2026-10-15 05:45:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-15,met1,31.23,31.17,0.06,normal,|dT| < 1.5 C,2026-10-15 00:35:00,2026-10-15 05:45:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-15,met3,31.3,31.42,-0.12,normal,|dT| < 1.5 C,2026-10-15 00:35:00,2026-10-15 05:45:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-15,met5,30.88,30.95,-0.07,normal,|dT| < 1.5 C,2026-10-15 00:35:00,2026-10-15 05:45:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-16,hallux,30.26,30.37,-0.11,normal,|dT| < 1.5 C,2026-10-16 01:05:00,2026-10-16 06:20:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-16,heel,30.74,30.66,0.08,normal,|dT| < 1.5 C,2026-10-16 01:05:00,2026-10-16 06:20:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-16,met1,31.22,31.16,0.06,normal,|dT| < 1.5 C,2026-10-16 01:05:00,2026-10-16 06:20:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-16,met3,31.28,31.41,-0.13,normal,|dT| < 1.5 C,2026-10-16 01:05:00,2026-10-16 06:20:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-16,met5,30.88,30.96,-0.08,normal,|dT| < 1.5 C,2026-10-16 01:05:00,2026-10-16 06:20:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-17,hallux,30.27,30.37,-0.1,normal,|dT| < 1.5 C,2026-10-17 00:35:00,2026-10-17 06:25:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-17,heel,30.75,30.67,0.08,normal,|dT| < 1.5 C,2026-10-17 00:35:00,2026-10-17 06:25:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-17,met1,31.24,31.16,0.08,normal,|dT| < 1.5 C,2026-10-17 00:35:00,2026-10-17 06:25:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-17,met3,31.3,31.42,-0.12,normal,|dT| < 1.5 C,2026-10-17 00:35:00,2026-10-17 06:25:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-17,met5,30.88,30.96,-0.08,normal,|dT| < 1.5 C,2026-10-17 00:35:00,2026-10-17 06:25:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-18,hallux,30.27,30.37,-0.1,normal,|dT| < 1.5 C,2026-10-18 00:40:00,2026-10-18 05:45:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-18,heel,30.75,30.68,0.07,normal,|dT| < 1.5 C,2026-10-18 00:40:00,2026-10-18 05:45:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-18,met1,31.22,31.15,0.07,normal,|dT| < 1.5 C,2026-10-18 00:40:00,2026-10-18 05:45:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-18,met3,31.28,31.42,-0.14,normal,|dT| < 1.5 C,2026-10-18 00:40:00,2026-10-18 05:45:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-18,met5,30.89,30.96,-0.07,normal,|dT| < 1.5 C,2026-10-18 00:40:00,2026-10-18 05:45:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-19,hallux,30.26,30.38,-0.12,normal,|dT| < 1.5 C,2026-10-19 00:45:00,2026-10-19 05:45:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-19,heel,30.75,30.67,0.08,normal,|dT| < 1.5 C,2026-10-19 00:45:00,2026-10-19 05:45:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-19,met1,31.23,31.16,0.07,normal,|dT| < 1.5 C,2026-10-19 00:45:00,2026-10-19 05:45:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-19,met3,31.29,31.43,-0.14,normal,|dT| < 1.5 C,2026-10-19 00:45:00,2026-10-19 05:45:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-19,met5,30.88,30.94,-0.06,normal,|dT| < 1.5 C,2026-10-19 00:45:00,2026-10-19 05:45:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-20,hallux,30.27,30.37,-0.1,normal,|dT| < 1.5 C,2026-10-20 00:55:00,2026-10-20 06:00:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-20,heel,30.74,30.66,0.08,normal,|dT| < 1.5 C,2026-10-20 00:55:00,2026-10-20 06:00:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-20,met1,31.23,31.14,0.09,normal,|dT| < 1.5 C,2026-10-20 00:55:00,2026-10-20 06:00:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-20,met3,31.28,31.43,-0.15,normal,|dT| < 1.5 C,2026-10-20 00:55:00,2026-10-20 06:00:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-20,met5,30.88,30.95,-0.07,normal,|dT| < 1.5 C,2026-10-20 00:55:00,2026-10-20 06:00:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-21,hallux,30.27,30.37,-0.1,normal,|dT| < 1.5 C,2026-10-21 00:15:00,2026-10-21 05:50:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-21,heel,30.75,30.67,0.08,normal,|dT| < 1.5 C,2026-10-21 00:15:00,2026-10-21 05:50:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-21,met1,31.22,31.15,0.07,normal,|dT| < 1.5 C,2026-10-21 00:15:00,2026-10-21 05:50:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-21,met3,31.29,31.42,-0.14,normal,|dT| < 1.5 C,2026-10-21 00:15:00,2026-10-21 05:50:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-21,met5,30.88,30.96,-0.09,normal,|dT| < 1.5 C,2026-10-21 00:15:00,2026-10-21 05:50:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-22,hallux,30.26,30.38,-0.12,normal,|dT| < 1.5 C,2026-10-22 01:05:00,2026-10-22 06:00:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-22,heel,30.74,30.66,0.08,normal,|dT| < 1.5 C,2026-10-22 01:05:00,2026-10-22 06:00:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-22,met1,31.24,31.16,0.08,normal,|dT| < 1.5 C,2026-10-22 01:05:00,2026-10-22 06:00:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-22,met3,31.28,31.42,-0.14,normal,|dT| < 1.5 C,2026-10-22 01:05:00,2026-10-22 06:00:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-22,met5,30.88,30.96,-0.08,normal,|dT| < 1.5 C,2026-10-22 01:05:00,2026-10-22 06:00:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-23,hallux,30.26,30.38,-0.12,normal,|dT| < 1.5 C,2026-10-23 00:05:00,2026-10-23 05:55:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-23,heel,30.75,30.66,0.09,normal,|dT| < 1.5 C,2026-10-23 00:05:00,2026-10-23 05:55:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-23,met1,31.24,31.16,0.08,normal,|dT| < 1.5 C,2026-10-23 00:05:00,2026-10-23 05:55:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-23,met3,31.29,31.41,-0.12,normal,|dT| < 1.5 C,2026-10-23 00:05:00,2026-10-23 05:55:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-23,met5,30.88,30.95,-0.07,normal,|dT| < 1.5 C,2026-10-23 00:05:00,2026-10-23 05:55:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-24,hallux,30.26,30.38,-0.12,normal,|dT| < 1.5 C,2026-10-24 00:55:00,2026-10-24 06:10:00,Great toe: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-24,heel,30.74,30.66,0.08,normal,|dT| < 1.5 C,2026-10-24 00:55:00,2026-10-24 06:10:00,Heel: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-24,met1,31.23,31.16,0.07,normal,|dT| < 1.5 C,2026-10-24 00:55:00,2026-10-24 06:10:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-24,met3,31.28,31.42,-0.14,normal,|dT| < 1.5 C,2026-10-24 00:55:00,2026-10-24 06:10:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+P0_control,2026-10-24,met5,30.88,30.95,-0.07,normal,|dT| < 1.5 C,2026-10-24 00:55:00,2026-10-24 06:10:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-11,hallux,30.24,30.25,-0.01,normal,|dT| < 1.5 C,2026-10-11 00:10:00,2026-10-11 06:30:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-11,heel,30.49,30.61,-0.12,normal,|dT| < 1.5 C,2026-10-11 00:10:00,2026-10-11 06:30:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-11,met1,31.05,31.13,-0.08,normal,|dT| < 1.5 C,2026-10-11 00:10:00,2026-10-11 06:30:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-11,met3,31.19,31.22,-0.03,normal,|dT| < 1.5 C,2026-10-11 00:10:00,2026-10-11 06:30:00,3rd metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-11,met5,30.89,30.83,0.06,normal,|dT| < 1.5 C,2026-10-11 00:10:00,2026-10-11 06:30:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-12,hallux,30.24,30.24,0.0,normal,|dT| < 1.5 C,2026-10-12 00:55:00,2026-10-12 05:55:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-12,heel,30.49,30.6,-0.11,normal,|dT| < 1.5 C,2026-10-12 00:55:00,2026-10-12 05:55:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-12,met1,31.05,31.12,-0.07,normal,|dT| < 1.5 C,2026-10-12 00:55:00,2026-10-12 05:55:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-12,met3,31.18,31.22,-0.04,normal,|dT| < 1.5 C,2026-10-12 00:55:00,2026-10-12 05:55:00,3rd metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-12,met5,30.88,30.83,0.05,normal,|dT| < 1.5 C,2026-10-12 00:55:00,2026-10-12 05:55:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-13,hallux,30.24,30.26,-0.02,normal,|dT| < 1.5 C,2026-10-13 00:25:00,2026-10-13 06:00:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-13,heel,30.48,30.6,-0.12,normal,|dT| < 1.5 C,2026-10-13 00:25:00,2026-10-13 06:00:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-13,met1,31.04,31.12,-0.08,normal,|dT| < 1.5 C,2026-10-13 00:25:00,2026-10-13 06:00:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-13,met3,31.19,31.24,-0.05,normal,|dT| < 1.5 C,2026-10-13 00:25:00,2026-10-13 06:00:00,3rd metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-13,met5,30.89,30.84,0.05,normal,|dT| < 1.5 C,2026-10-13 00:25:00,2026-10-13 06:00:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-14,hallux,30.25,30.25,0.0,normal,|dT| < 1.5 C,2026-10-14 00:35:00,2026-10-14 06:05:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-14,heel,30.49,30.61,-0.12,normal,|dT| < 1.5 C,2026-10-14 00:35:00,2026-10-14 06:05:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-14,met1,31.05,31.12,-0.07,normal,|dT| < 1.5 C,2026-10-14 00:35:00,2026-10-14 06:05:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-14,met3,31.18,31.23,-0.05,normal,|dT| < 1.5 C,2026-10-14 00:35:00,2026-10-14 06:05:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-14,met5,30.89,30.83,0.06,normal,|dT| < 1.5 C,2026-10-14 00:35:00,2026-10-14 06:05:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-15,hallux,30.24,30.26,-0.02,normal,|dT| < 1.5 C,2026-10-15 00:25:00,2026-10-15 05:30:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-15,heel,30.48,30.61,-0.13,normal,|dT| < 1.5 C,2026-10-15 00:25:00,2026-10-15 05:30:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-15,met1,31.05,31.12,-0.07,normal,|dT| < 1.5 C,2026-10-15 00:25:00,2026-10-15 05:30:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-15,met3,31.19,31.23,-0.04,normal,|dT| < 1.5 C,2026-10-15 00:25:00,2026-10-15 05:30:00,3rd metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-15,met5,30.89,30.83,0.06,normal,|dT| < 1.5 C,2026-10-15 00:25:00,2026-10-15 05:30:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-16,hallux,30.24,30.25,-0.01,normal,|dT| < 1.5 C,2026-10-16 01:25:00,2026-10-16 06:10:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-16,heel,30.49,30.61,-0.12,normal,|dT| < 1.5 C,2026-10-16 01:25:00,2026-10-16 06:10:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-16,met1,31.04,31.13,-0.09,normal,|dT| < 1.5 C,2026-10-16 01:25:00,2026-10-16 06:10:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-16,met3,31.19,31.24,-0.05,normal,|dT| < 1.5 C,2026-10-16 01:25:00,2026-10-16 06:10:00,3rd metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-16,met5,30.89,30.83,0.06,normal,|dT| < 1.5 C,2026-10-16 01:25:00,2026-10-16 06:10:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-17,hallux,30.24,30.25,-0.01,normal,|dT| < 1.5 C,2026-10-17 00:45:00,2026-10-17 06:00:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-17,heel,30.49,30.61,-0.12,normal,|dT| < 1.5 C,2026-10-17 00:45:00,2026-10-17 06:00:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-17,met1,32.05,31.14,0.91,normal,|dT| < 1.5 C,2026-10-17 00:45:00,2026-10-17 06:00:00,1st metatarsal head: left/right temperatures similar (0.9 °C difference).
+S1_hotspot,2026-10-17,met3,31.19,31.24,-0.05,normal,|dT| < 1.5 C,2026-10-17 00:45:00,2026-10-17 06:00:00,3rd metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-17,met5,30.88,30.84,0.04,normal,|dT| < 1.5 C,2026-10-17 00:45:00,2026-10-17 06:00:00,5th metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-18,hallux,30.23,30.24,-0.01,normal,|dT| < 1.5 C,2026-10-18 01:00:00,2026-10-18 06:05:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-18,heel,30.49,30.61,-0.12,normal,|dT| < 1.5 C,2026-10-18 01:00:00,2026-10-18 06:05:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-18,met1,32.85,31.13,1.72,warning,|dT| >= 1.5 C,2026-10-18 01:00:00,2026-10-18 06:05:00,1st metatarsal head: left foot 1.7 °C warmer than the other. Worth keeping an eye on; re-check tomorrow.
+S1_hotspot,2026-10-18,met3,31.18,31.24,-0.06,normal,|dT| < 1.5 C,2026-10-18 01:00:00,2026-10-18 06:05:00,3rd metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-18,met5,30.9,30.84,0.05,normal,|dT| < 1.5 C,2026-10-18 01:00:00,2026-10-18 06:05:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-19,hallux,30.24,30.25,-0.01,normal,|dT| < 1.5 C,2026-10-19 00:10:00,2026-10-19 06:00:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-19,heel,30.49,30.61,-0.12,normal,|dT| < 1.5 C,2026-10-19 00:10:00,2026-10-19 06:00:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-19,met1,32.94,31.13,1.81,warning,|dT| >= 1.5 C,2026-10-19 00:10:00,2026-10-19 06:00:00,1st metatarsal head: left foot 1.8 °C warmer than the other. Worth keeping an eye on; re-check tomorrow.
+S1_hotspot,2026-10-19,met3,31.19,31.24,-0.05,normal,|dT| < 1.5 C,2026-10-19 00:10:00,2026-10-19 06:00:00,3rd metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-19,met5,30.89,30.83,0.06,normal,|dT| < 1.5 C,2026-10-19 00:10:00,2026-10-19 06:00:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-20,hallux,30.25,30.26,-0.01,normal,|dT| < 1.5 C,2026-10-20 01:10:00,2026-10-20 06:05:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-20,heel,30.49,30.61,-0.12,normal,|dT| < 1.5 C,2026-10-20 01:10:00,2026-10-20 06:05:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-20,met1,33.84,31.12,2.72,warning,|dT| >= 2.2 C (single day),2026-10-20 01:10:00,2026-10-20 06:05:00,1st metatarsal head: left foot 2.7 °C warmer than the other. Worth keeping an eye on; re-check tomorrow.
+S1_hotspot,2026-10-20,met3,31.19,31.23,-0.04,normal,|dT| < 1.5 C,2026-10-20 01:10:00,2026-10-20 06:05:00,3rd metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-20,met5,30.88,30.84,0.04,normal,|dT| < 1.5 C,2026-10-20 01:10:00,2026-10-20 06:05:00,5th metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-21,hallux,30.24,30.25,-0.01,normal,|dT| < 1.5 C,2026-10-21 00:35:00,2026-10-21 05:55:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-21,heel,30.49,30.61,-0.12,normal,|dT| < 1.5 C,2026-10-21 00:35:00,2026-10-21 05:55:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-21,met1,34.05,31.12,2.93,alert,"|dT| >= 2.2 C on 2 consecutive days, same sign",2026-10-21 00:35:00,2026-10-21 05:55:00,1st metatarsal head: left foot 2.9 °C warmer for consecutive days. This pattern is worth a foot check by a clinician soon. (Screening aid only — not a diagnosis.)
+S1_hotspot,2026-10-21,met3,31.2,31.23,-0.03,normal,|dT| < 1.5 C,2026-10-21 00:35:00,2026-10-21 05:55:00,3rd metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-21,met5,30.88,30.85,0.03,normal,|dT| < 1.5 C,2026-10-21 00:35:00,2026-10-21 05:55:00,5th metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-22,hallux,30.23,30.25,-0.02,normal,|dT| < 1.5 C,2026-10-22 00:25:00,2026-10-22 06:25:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-22,heel,30.49,30.6,-0.11,normal,|dT| < 1.5 C,2026-10-22 00:25:00,2026-10-22 06:25:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-22,met1,34.04,31.13,2.91,alert,"|dT| >= 2.2 C on 2 consecutive days, same sign",2026-10-22 00:25:00,2026-10-22 06:25:00,1st metatarsal head: left foot 2.9 °C warmer for consecutive days. This pattern is worth a foot check by a clinician soon. (Screening aid only — not a diagnosis.)
+S1_hotspot,2026-10-22,met3,31.19,31.24,-0.05,normal,|dT| < 1.5 C,2026-10-22 00:25:00,2026-10-22 06:25:00,3rd metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-22,met5,30.89,30.83,0.06,normal,|dT| < 1.5 C,2026-10-22 00:25:00,2026-10-22 06:25:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-23,hallux,30.24,30.25,-0.01,normal,|dT| < 1.5 C,2026-10-22 23:55:00,2026-10-23 06:15:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-23,heel,30.49,30.6,-0.11,normal,|dT| < 1.5 C,2026-10-22 23:55:00,2026-10-23 06:15:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-23,met1,34.15,31.12,3.03,alert,"|dT| >= 2.2 C on 2 consecutive days, same sign",2026-10-22 23:55:00,2026-10-23 06:15:00,1st metatarsal head: left foot 3.0 °C warmer for consecutive days. This pattern is worth a foot check by a clinician soon. (Screening aid only — not a diagnosis.)
+S1_hotspot,2026-10-23,met3,31.2,31.24,-0.04,normal,|dT| < 1.5 C,2026-10-22 23:55:00,2026-10-23 06:15:00,3rd metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-23,met5,30.89,30.83,0.06,normal,|dT| < 1.5 C,2026-10-22 23:55:00,2026-10-23 06:15:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-24,hallux,30.25,30.26,-0.01,normal,|dT| < 1.5 C,2026-10-24 00:55:00,2026-10-24 06:05:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-24,heel,30.49,30.62,-0.13,normal,|dT| < 1.5 C,2026-10-24 00:55:00,2026-10-24 06:05:00,Heel: left/right temperatures similar (0.1 °C difference).
+S1_hotspot,2026-10-24,met1,34.15,31.12,3.03,alert,"|dT| >= 2.2 C on 2 consecutive days, same sign",2026-10-24 00:55:00,2026-10-24 06:05:00,1st metatarsal head: left foot 3.0 °C warmer for consecutive days. This pattern is worth a foot check by a clinician soon. (Screening aid only — not a diagnosis.)
+S1_hotspot,2026-10-24,met3,31.19,31.23,-0.04,normal,|dT| < 1.5 C,2026-10-24 00:55:00,2026-10-24 06:05:00,3rd metatarsal head: left/right temperatures similar (0.0 °C difference).
+S1_hotspot,2026-10-24,met5,30.89,30.84,0.05,normal,|dT| < 1.5 C,2026-10-24 00:55:00,2026-10-24 06:05:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-11,hallux,30.17,30.18,-0.01,normal,|dT| < 1.5 C,2026-10-11 01:30:00,2026-10-11 06:50:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-11,heel,30.7,30.6,0.1,normal,|dT| < 1.5 C,2026-10-11 01:30:00,2026-10-11 06:50:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-11,met1,31.01,30.96,0.05,normal,|dT| < 1.5 C,2026-10-11 01:30:00,2026-10-11 06:50:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-11,met3,31.36,31.16,0.2,normal,|dT| < 1.5 C,2026-10-11 01:30:00,2026-10-11 06:50:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-11,met5,30.79,30.83,-0.04,normal,|dT| < 1.5 C,2026-10-11 01:30:00,2026-10-11 06:50:00,5th metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-12,hallux,30.18,30.17,0.01,normal,|dT| < 1.5 C,2026-10-12 00:50:00,2026-10-12 06:05:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-12,heel,30.69,30.59,0.1,normal,|dT| < 1.5 C,2026-10-12 00:50:00,2026-10-12 06:05:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-12,met1,31.01,30.96,0.05,normal,|dT| < 1.5 C,2026-10-12 00:50:00,2026-10-12 06:05:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-12,met3,31.36,31.17,0.19,normal,|dT| < 1.5 C,2026-10-12 00:50:00,2026-10-12 06:05:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-12,met5,30.79,30.83,-0.04,normal,|dT| < 1.5 C,2026-10-12 00:50:00,2026-10-12 06:05:00,5th metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-13,hallux,30.18,30.17,0.01,normal,|dT| < 1.5 C,2026-10-13 00:15:00,2026-10-13 06:00:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-13,heel,30.71,30.59,0.12,normal,|dT| < 1.5 C,2026-10-13 00:15:00,2026-10-13 06:00:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-13,met1,31.01,30.97,0.04,normal,|dT| < 1.5 C,2026-10-13 00:15:00,2026-10-13 06:00:00,1st metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-13,met3,31.35,31.16,0.19,normal,|dT| < 1.5 C,2026-10-13 00:15:00,2026-10-13 06:00:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-13,met5,30.8,30.83,-0.03,normal,|dT| < 1.5 C,2026-10-13 00:15:00,2026-10-13 06:00:00,5th metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-14,hallux,30.18,30.17,0.01,normal,|dT| < 1.5 C,2026-10-14 00:30:00,2026-10-14 06:20:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-14,heel,30.7,30.58,0.12,normal,|dT| < 1.5 C,2026-10-14 00:30:00,2026-10-14 06:20:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-14,met1,31.0,30.97,0.03,normal,|dT| < 1.5 C,2026-10-14 00:30:00,2026-10-14 06:20:00,1st metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-14,met3,31.37,31.17,0.2,normal,|dT| < 1.5 C,2026-10-14 00:30:00,2026-10-14 06:20:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-14,met5,30.78,30.84,-0.06,normal,|dT| < 1.5 C,2026-10-14 00:30:00,2026-10-14 06:20:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-15,hallux,30.17,30.16,0.01,normal,|dT| < 1.5 C,2026-10-15 01:20:00,2026-10-15 06:25:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-15,heel,30.7,30.61,0.09,normal,|dT| < 1.5 C,2026-10-15 01:20:00,2026-10-15 06:25:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-15,met1,31.0,30.97,0.03,normal,|dT| < 1.5 C,2026-10-15 01:20:00,2026-10-15 06:25:00,1st metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-15,met3,31.36,31.16,0.2,normal,|dT| < 1.5 C,2026-10-15 01:20:00,2026-10-15 06:25:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-15,met5,30.79,30.84,-0.05,normal,|dT| < 1.5 C,2026-10-15 01:20:00,2026-10-15 06:25:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-16,hallux,30.18,30.16,0.02,normal,|dT| < 1.5 C,2026-10-16 01:15:00,2026-10-16 06:10:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-16,heel,30.71,30.61,0.1,normal,|dT| < 1.5 C,2026-10-16 01:15:00,2026-10-16 06:10:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-16,met1,31.0,30.96,0.04,normal,|dT| < 1.5 C,2026-10-16 01:15:00,2026-10-16 06:10:00,1st metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-16,met3,31.36,31.15,0.21,normal,|dT| < 1.5 C,2026-10-16 01:15:00,2026-10-16 06:10:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-16,met5,30.77,30.83,-0.05,normal,|dT| < 1.5 C,2026-10-16 01:15:00,2026-10-16 06:10:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-17,hallux,30.16,30.16,0.0,normal,|dT| < 1.5 C,2026-10-17 01:00:00,2026-10-17 06:15:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-17,heel,30.71,30.59,0.12,normal,|dT| < 1.5 C,2026-10-17 01:00:00,2026-10-17 06:15:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-17,met1,31.0,30.96,0.04,normal,|dT| < 1.5 C,2026-10-17 01:00:00,2026-10-17 06:15:00,1st metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-17,met3,31.36,31.17,0.19,normal,|dT| < 1.5 C,2026-10-17 01:00:00,2026-10-17 06:15:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-17,met5,30.79,30.83,-0.04,normal,|dT| < 1.5 C,2026-10-17 01:00:00,2026-10-17 06:15:00,5th metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-18,hallux,30.17,30.17,0.0,normal,|dT| < 1.5 C,2026-10-17 23:45:00,2026-10-18 05:55:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-18,heel,30.7,30.59,0.11,normal,|dT| < 1.5 C,2026-10-17 23:45:00,2026-10-18 05:55:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-18,met1,31.02,30.97,0.05,normal,|dT| < 1.5 C,2026-10-17 23:45:00,2026-10-18 05:55:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-18,met3,31.35,31.17,0.18,normal,|dT| < 1.5 C,2026-10-17 23:45:00,2026-10-18 05:55:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-18,met5,30.79,30.83,-0.04,normal,|dT| < 1.5 C,2026-10-17 23:45:00,2026-10-18 05:55:00,5th metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-19,hallux,30.18,30.16,0.02,normal,|dT| < 1.5 C,2026-10-19 00:15:00,2026-10-19 06:00:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-19,heel,30.7,30.59,0.11,normal,|dT| < 1.5 C,2026-10-19 00:15:00,2026-10-19 06:00:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-19,met1,31.0,30.99,0.01,normal,|dT| < 1.5 C,2026-10-19 00:15:00,2026-10-19 06:00:00,1st metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-19,met3,31.36,31.16,0.2,normal,|dT| < 1.5 C,2026-10-19 00:15:00,2026-10-19 06:00:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-19,met5,30.78,,,no_data,insufficient valid rest-window data,2026-10-19 00:15:00,2026-10-19 06:00:00,5th metatarsal head: not enough reliable resting data today.
+S4_sensor_fault,2026-10-20,hallux,30.17,30.17,0.0,normal,|dT| < 1.5 C,2026-10-20 00:35:00,2026-10-20 06:15:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-20,heel,30.71,30.6,0.11,normal,|dT| < 1.5 C,2026-10-20 00:35:00,2026-10-20 06:15:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-20,met1,31.01,30.98,0.03,normal,|dT| < 1.5 C,2026-10-20 00:35:00,2026-10-20 06:15:00,1st metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-20,met3,31.35,31.16,0.19,normal,|dT| < 1.5 C,2026-10-20 00:35:00,2026-10-20 06:15:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-20,met5,30.78,,,no_data,insufficient valid rest-window data,2026-10-20 00:35:00,2026-10-20 06:15:00,5th metatarsal head: not enough reliable resting data today.
+S4_sensor_fault,2026-10-21,hallux,30.16,30.16,0.0,normal,|dT| < 1.5 C,2026-10-21 00:15:00,2026-10-21 05:15:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-21,heel,30.7,30.58,0.12,normal,|dT| < 1.5 C,2026-10-21 00:15:00,2026-10-21 05:15:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-21,met1,30.99,30.97,0.02,normal,|dT| < 1.5 C,2026-10-21 00:15:00,2026-10-21 05:15:00,1st metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-21,met3,31.36,31.15,0.21,normal,|dT| < 1.5 C,2026-10-21 00:15:00,2026-10-21 05:15:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-21,met5,30.79,30.84,-0.05,normal,|dT| < 1.5 C,2026-10-21 00:15:00,2026-10-21 05:15:00,5th metatarsal head: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-22,hallux,30.17,30.16,0.01,normal,|dT| < 1.5 C,2026-10-22 00:40:00,2026-10-22 05:55:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-22,heel,30.7,30.6,0.1,normal,|dT| < 1.5 C,2026-10-22 00:40:00,2026-10-22 05:55:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-22,met1,31.01,30.96,0.05,normal,|dT| < 1.5 C,2026-10-22 00:40:00,2026-10-22 05:55:00,1st metatarsal head: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-22,met3,31.36,31.16,0.2,normal,|dT| < 1.5 C,2026-10-22 00:40:00,2026-10-22 05:55:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-22,met5,30.79,30.83,-0.04,normal,|dT| < 1.5 C,2026-10-22 00:40:00,2026-10-22 05:55:00,5th metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-23,hallux,30.17,30.16,0.01,normal,|dT| < 1.5 C,2026-10-23 00:45:00,2026-10-23 05:40:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-23,heel,30.7,30.59,0.11,normal,|dT| < 1.5 C,2026-10-23 00:45:00,2026-10-23 05:40:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-23,met1,31.01,30.98,0.04,normal,|dT| < 1.5 C,2026-10-23 00:45:00,2026-10-23 05:40:00,1st metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-23,met3,31.36,31.18,0.18,normal,|dT| < 1.5 C,2026-10-23 00:45:00,2026-10-23 05:40:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-23,met5,30.78,30.82,-0.04,normal,|dT| < 1.5 C,2026-10-23 00:45:00,2026-10-23 05:40:00,5th metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-24,hallux,30.18,30.17,0.01,normal,|dT| < 1.5 C,2026-10-24 00:45:00,2026-10-24 05:45:00,Great toe: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-24,heel,30.69,30.6,0.09,normal,|dT| < 1.5 C,2026-10-24 00:45:00,2026-10-24 05:45:00,Heel: left/right temperatures similar (0.1 °C difference).
+S4_sensor_fault,2026-10-24,met1,31.01,30.97,0.04,normal,|dT| < 1.5 C,2026-10-24 00:45:00,2026-10-24 05:45:00,1st metatarsal head: left/right temperatures similar (0.0 °C difference).
+S4_sensor_fault,2026-10-24,met3,31.35,31.16,0.19,normal,|dT| < 1.5 C,2026-10-24 00:45:00,2026-10-24 05:45:00,3rd metatarsal head: left/right temperatures similar (0.2 °C difference).
+S4_sensor_fault,2026-10-24,met5,30.79,30.83,-0.04,normal,|dT| < 1.5 C,2026-10-24 00:45:00,2026-10-24 05:45:00,5th metatarsal head: left/right temperatures similar (0.0 °C difference).

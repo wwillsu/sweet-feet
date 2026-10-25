@@ -1,0 +1,60 @@
+{
+  "P0_control": {
+    "description": "Healthy control, no injected asymmetry.",
+    "expect": {
+      "alerts": [],
+      "warning_days": {},
+      "no_warnings": true
+    },
+    "day0_date": "2026-10-11"
+  },
+  "S1_hotspot": {
+    "description": "Sustained left 1st-metatarsal hotspot ramping to +3.0 C (pre-ulcer inflammation pattern).",
+    "expect": {
+      "alerts": [
+        {
+          "site": "met1",
+          "first_day": 10,
+          "sign": 1
+        }
+      ],
+      "warning_days": {
+        "met1": [
+          7,
+          8,
+          9
+        ]
+      }
+    },
+    "day0_date": "2026-10-11"
+  },
+  "S4_sensor_fault": {
+    "description": "Right met5 sensor stuck at 25.00 C across two days (would fake a +5 C asymmetry), plus 85 C power-on glitches on L hallux and a single-sample spike on L heel.",
+    "expect": {
+      "alerts": [],
+      "warning_days": {},
+      "no_warnings": true,
+      "flagged_sensors": [
+        [
+          "R",
+          "met5"
+        ],
+        [
+          "L",
+          "hallux"
+        ],
+        [
+          "L",
+          "heel"
+        ]
+      ],
+      "insufficient": {
+        "met5": [
+          8,
+          9
+        ]
+      }
+    },
+    "day0_date": "2026-10-11"
+  }
+}

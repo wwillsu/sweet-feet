@@ -1,0 +1,71 @@
+{
+  "_comment": "Single source of truth for all thresholds. Read by pipeline/config.py and the dashboard.",
+
+  "clinical": {
+    "warning_c": 1.5,
+    "alert_c": 2.2,
+    "alert_consecutive_days": 2,
+    "require_same_sign": true,
+    "require_calendar_consecutive": true
+  },
+
+  "sites": ["hallux", "met1", "met3", "met5", "heel"],
+  "site_labels": {
+    "hallux": "Great toe",
+    "met1": "1st metatarsal head",
+    "met3": "3rd metatarsal head",
+    "met5": "5th metatarsal head",
+    "heel": "Heel"
+  },
+
+  "sampling": {
+    "interval_min": 5,
+    "day_boundary_hour": 12
+  },
+
+  "faults": {
+    "range_min_c": 18.0,
+    "range_max_c": 40.0,
+    "jump_c": 1.5,
+    "hampel_window": 7,
+    "stuck_window_samples": 12,
+    "stuck_std_c": 0.005,
+    "stuck_peer_move_c": 0.5,
+    "sensor_degraded_fraction": 0.05,
+    "sensor_fault_fraction": 0.30
+  },
+
+  "rest": {
+    "slope_window_min": 60,
+    "max_abs_slope_c_per_h": 0.3,
+    "min_duration_min": 120,
+    "min_valid_fraction": 0.6
+  },
+
+  "synthetic": {
+    "seed": 42,
+    "start_date": "2026-10-11",
+    "n_days": 14
+  },
+
+  "demo": {
+    "_comment": "Demo mode: one simulated 'day' every few seconds; windows shortened proportionally.",
+    "interval_min": 1,
+    "slope_window_min": 10,
+    "min_duration_min": 20,
+    "seconds_per_day": 6
+  },
+
+  "live_demo": {
+    "_comment": "Live demo mode (pipeline/live.py): rest-window rule OFF, one reading per second, compared immediately. Alert = |dT| >= alert_c, same sign, on alert_consecutive_samples readings in a row.",
+    "interval_s": 1.0,
+    "alert_consecutive_samples": 3,
+    "history_s": 180
+  },
+
+  "arduino": {
+    "_comment": "Live demo from the FootMonitor board (python -m pipeline.live). channels[i] = [foot, site] of thermistor T<i> (A0, A1, A2); edit to match the wiring. Readings older than stale_s are not shown.",
+    "channels": [["L", "met1"], ["R", "met1"], ["L", "heel"]],
+    "stale_s": 5
+  }
+}
